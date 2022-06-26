@@ -21,4 +21,4 @@ menor = min(lista) # cria uma variável para armazenar o menor número
 # saida de dados
 print(f"O maior número é {maior}") # imprime o maior número
 print(f"O menor número é {menor}") # imprime o menor número
-print("Fim do programa")
+print("Fim do programa") 
