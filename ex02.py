@@ -1,25 +1,34 @@
+#
 # Autores:
 # Michel Silva
 # Emanuel Frank
 # Carlos Eduardo
-# data: 26/06/2022
+#
+# data: 08/07/2022
 #
 # 2 – ler uma lista de 5 número reais e imprimir a lista
 # na ordem inversa.
 #
-# entrada de dados
-lista = [] # cria uma lista vazia para armazenar os dados
 
-# processamento de dados
-for i in range(5): # para cada i em 0 a 4 faça o seguinte
-    lista.append(float(input("Digite um número: "))) # adiciona o número digitado na lista
+# Entrada de dados
 
-# saida de dados
-lista2 = lista[::-1] # cria uma lista vazia para armazenar os dados e aplica o método reverse()
+lista = [] # Criando uma lista vazia para armazenar os dados
+
+# Processamento de dados
+
+for i in range(5): # Para cada 'i' -> Item no 'range()' -> Tamanho de 0 a 4 faça o seguinte
+    lista.append(float(input("Digite um número: "))) # Adicione o valor flutuante solicitado na lista
+
+# Saída de dados
+
+lista2 = lista[::-1] # Criando uma lista vazia para armazenar os dados usando slice [::-1] para inverter
+
 # ou
-# lista2 = lista[:] # cria uma lista vazia para armazenar os dados e
-# lista2.reverse() # aplica o método reverse()
 
-print(lista2) # imprime a lista invertida (lista2)
-print("Fim do programa")
+# lista2.reverse() # Aplicando o método built-in .reverse()
 
+print(f'\nA lista: {lista}') # Imprimindo a lista normal
+
+print(f'A lista invertida: {lista2}') # Imprimindo a lista invertida (lista2)
+
+print("\nfim do programa") # Informando ao usuário que o programa chegou ao fim
